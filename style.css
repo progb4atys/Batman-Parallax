@@ -77,24 +77,27 @@ h1{
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-.batman{
-    height: 500px;
-    position: relative;
-    background-attachment: fixed;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-}
 .portrayal{
     display: inline-block;
     position: absolute;
     top: 50%;
-    left: 35%;
+    /* left: 35%; */
     padding: 0.5rem 1.5rem;
     border: 1px rgba(0, 0, 0, 0.41) solid;
     border-radius: 23px 23px 23px 23px;
     background-color: rgba(0, 0, 0, 0.41);
     color: rgba(255, 255, 255, 0.66);
+}
+.batman{
+    display: flex;
+    height: 500px;
+    position: relative;
+    background-attachment: fixed;
+    /* text-align: center; */
+    justify-content: center;
+    /* align-content: center; */
+    background-size: cover;
+    background-position: center;
 }
 #conc{
     position: absolute;
