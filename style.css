@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 100px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110%;
+    transform-style: preserve-3d;/*to create parallax effect*/
+    z-index: -1;/*for overlapping of layers by default value=1*/
+}
+.background{
+    transform: translateZ(-100px) scale(2);
+}
+.foreground{
+    transform: translateZ(-50px) scale(1.5);
+}
+.background, .foreground{
+    position: absolute;
+    height: 110%;
+    width: 100%;
+    z-index: -1 ;
+    /* object-fit: cover; */
+}
+h1{
+    position: absolute;
+    top: 2.5rem;
+    /* left: 50%; */
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color: rgba(46, 40, 40, 0.486);
+    text-shadow: 2px 2px 4px rgba(131, 121, 121, 0.23);
+    font-family: 'Oswald', sans-serif;
+}
+#mainsec{
+    /* display: inline-flexbox; */
+    background-color: rgba(0, 0, 0, 0.618);
+    color: white;
+    padding: 5rem 0;
+}
+.xtra{
+    color: white;
+    background-color: rgb(49, 45, 45);
+}
+#batman1{
+    background-image: url(gif/1.jpg);
+}
+#batman2{
+    background-image: url(gif/2.jpg);
+}
+#batman3{
+    background-image: url(gif/3.jpg);
+}
+#batmanall3{
+    background-image: url(gif/4.jpg);
+}
+.submainheading{
+    font-size: 5rem;
+    padding: 0 6rem;
+}
+.text{
+    font-size: 1.2rem;
+    padding: 0 6.2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.batman{
+    height: 500px;
+    position: relative;
+    background-attachment: fixed;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+.portrayal{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    padding: 0.5rem 1.5rem;
+    border: 1px rgba(0, 0, 0, 0.41) solid;
+    border-radius: 23px 23px 23px 23px;
+    background-color: rgba(0, 0, 0, 0.41);
+    color: rgba(255, 255, 255, 0.66);
+}
+#conc{
+    position: absolute;
+    left: 43.5%;
+}
+a:hover{
+    color: peru;
+}
+footer{
+    text-align: center;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    color: white;
+    background-color: black;
+}
+#copy{
+    font-family: 'Ubuntu', sans-serif;
+}
