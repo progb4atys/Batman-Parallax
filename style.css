@@ -95,14 +95,10 @@ h1{
     background-attachment: fixed;
     /* text-align: center; */
     justify-content: center;
-    /* align-content: center; */
     background-size: cover;
     background-position: center;
 }
-#conc{
-    position: absolute;
-    left: 43.5%;
-}
+
 a:hover{
     color: peru;
 }
